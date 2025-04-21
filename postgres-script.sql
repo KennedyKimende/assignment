@@ -1,14 +1,6 @@
-create database SIMPLEDB;
+create database simpledb;
 
-create database SIMPLEDB with tablespace ts_postgres;
 
-CREATE DATABASE "SIMPLEDB"
-WITH TABLESPACE ts_postgres
-OWNER "postgres"
-ENCODING 'UTF8'
-LC_COLLATE = 'en_US.UTF-8'
-LC_CTYPE = 'en_US.UTF-8'
-TEMPLATE template0;
 
 
 -- Create the authors table
