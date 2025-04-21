@@ -1,0 +1,12 @@
+architecture: replication
+
+auth:
+  username: postgres
+  password: postgres
+  database: SIMPLEDB
+
+replication:
+  enabled: true
+  user: replicator
+  password: replicatorpassword
+  replicaCount: 2

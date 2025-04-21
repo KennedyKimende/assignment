@@ -1,0 +1,18 @@
+@echo off
+REM --- PostgreSQL connection details ---
+SET PGHOST=localhost
+SET PGPORT=5432
+SET PGUSER=postgres
+SET PGPASSWORD=postgres
+SET PGDATABASE=postgres
+
+
+SET CREATEDBSQL="create database SIMPLEDB;"
+
+REM --- SQL to execute ---
+SET SQL="INSERT INTO your_table_name (column1, column2) VALUES ('value1', 'value2');"
+
+REM --- Run the SQL command using psql ---
+psql -c %CREATEDBSQL%
+
+pause
